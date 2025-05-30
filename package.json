@@ -19,9 +19,9 @@
     "@types/react-router-dom": "^5.3.3",
     "aws-amplify": "^6.15.0",
     "framer-motion": "^12.14.0",
-    "postcss": "^8.5.3",
-    "react-router-dom": "^7.6.1",
-    "tailwindcss": "^4.1.7"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.1"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.16.1",

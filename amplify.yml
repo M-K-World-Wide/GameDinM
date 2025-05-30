@@ -4,10 +4,8 @@ frontend:
     preBuild:
       commands:
         - npm ci
-        - npm install -g @aws-amplify/cli
     build:
       commands:
-        - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
         - npm run build
   artifacts:
     baseDirectory: dist
@@ -16,7 +14,6 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-      - .npm/**/*
   customHeaders:
     - pattern: '**/*'
       headers:

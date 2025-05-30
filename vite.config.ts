@@ -10,8 +10,20 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          aws: ['aws-amplify', '@aws-amplify/auth', '@aws-amplify/core'],
+        },
+      },
+    },
+  },
   server: {
     port: 3000,
-    open: true,
+    host: true,
   },
 }); 
