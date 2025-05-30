@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@aws-amplify/adapter-nextjs": "^1.6.2",
+    "@aws-amplify/auth": "^6.13.0",
+    "@aws-amplify/core": "^6.12.0",
     "@aws-amplify/ui-react": "^6.11.2",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@types/react-router-dom": "^5.3.3",
-    "aws-amplify": "^6.14.4",
+    "aws-amplify": "^6.15.0",
     "framer-motion": "^12.14.0",
     "postcss": "^8.5.3",
     "react-router-dom": "^7.6.1",
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@aws-amplify/backend": "^1.16.1",
     "@aws-amplify/backend-cli": "^1.7.2",
+    "@types/node": "^22.15.27",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
