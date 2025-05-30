@@ -15,8 +15,8 @@ A modern, minimalist website built with React, TypeScript, and AWS Amplify.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/EsKaye/MKWWsite.git
-cd MKWWsite
+git clone https://github.com/M-K-World-Wide/Home.git
+cd Home
 ```
 
 2. Install dependencies:
@@ -41,6 +41,8 @@ src/
 ├── components/     # Reusable components
 ├── pages/         # Page components
 ├── styles/        # Global styles
+├── config/        # Configuration files
+├── services/      # Service modules
 └── App.tsx        # Main application component
 ```
 
