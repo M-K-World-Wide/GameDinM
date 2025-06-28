@@ -1,15 +1,13 @@
 # GameDin Mobile
 
-A comprehensive gaming platform that combines Unity-based game development with a modern iOS mobile app for social gaming experiences.
+A comprehensive, cross-platform gaming ecosystem featuring:
+- **Unity Game Engine**: Multi-platform game logic and builds (iOS, Android, Windows, macOS, Linux, UWP, Steam, Nintendo Switch, Xbox Store)
+- **iOS Mobile App**: Modern SwiftUI-based social gaming app (authentication, profiles, social features)
+- **Web Frontend**: Modern, minimalist website built with React, TypeScript, AWS Amplify, Vite, and Tailwind CSS
 
-## 🎮 Project Overview
+---
 
-GameDin Mobile is a cross-platform gaming ecosystem that consists of:
-
-- **Unity Game Engine**: Multi-platform game development with support for iOS, Android, Windows, macOS, Linux, UWP, Steam, Nintendo Switch, and Xbox Store
-- **iOS Mobile App**: Modern SwiftUI-based social gaming app with authentication, profiles, and social features
-
-## 🏗️ Architecture
+## 🏗️ Architecture Overview
 
 ### Unity Components (Game Engine)
 - **Core**: Game management and initialization
@@ -27,32 +25,42 @@ GameDin Mobile is a cross-platform gaming ecosystem that consists of:
 - **Components**: Reusable UI components
 - **Themes**: Consistent styling and design system
 
-## 📱 Mobile App Features
+### Web Frontend (React + Amplify)
+- **src/**: React app source code (components, pages, hooks, services)
+- **public/**: Static assets and manifest
+- **Features**:
+  - Modern, minimalist design (dark theme)
+  - Built with React, TypeScript, Vite
+  - Smooth animations (Framer Motion)
+  - Responsive layout (Tailwind CSS)
+  - AWS Amplify integration
+  - Fast development and deployment
 
-### Authentication & Profiles
+---
+
+## 📱 Mobile App Features
 - Anonymous and Apple ID sign-in
 - Customizable player profiles
 - Reputation scoring system
 - Platform preferences
-
-### Social Features
 - Game feed and discovery
 - Player following and challenges
 - Memory timeline for achievements
 - Inbox for communications
-
-### Gaming Integration
 - Steam marketplace integration
 - Game memory tracking
-- Platform-specific features
 - Cross-platform compatibility
 
-## 🚀 Getting Started
+## 🌐 Web Frontend Features
+- Modern, minimalist landing page
+- About, Contact, and NotFound pages
+- Responsive, animated UI
+- AWS Amplify hosting and backend integration
+- Easy local development and production build
 
-### Prerequisites
-- **For Unity Development**: Unity Hub and Unity Editor (LTS recommended)
-- **For iOS Development**: Xcode 14+, iOS 16+
-- **For Android Development**: Android Studio, Android SDK
+---
+
+## 🚀 Getting Started
 
 ### Unity Setup
 1. Install [Unity Hub](https://unity.com/download)
@@ -65,10 +73,13 @@ GameDin Mobile is a cross-platform gaming ecosystem that consists of:
 2. Configure your development team
 3. Build and run on simulator or device
 
-### Android Setup
-1. Open the project in Android Studio
-2. Configure your signing keys
-3. Build APK or AAB for distribution
+### Web Frontend Setup
+1. `cd` into the project root
+2. Install dependencies: `npm install`
+3. Start the dev server: `npm run dev`
+4. Build for production: `npm run build`
+
+---
 
 ## 📁 Project Structure
 
@@ -95,75 +106,44 @@ GameDin Mobile/
 ├── services/                # iOS business logic
 ├── components/              # iOS reusable components
 ├── themes/                  # iOS styling
-└── auth/                    # iOS authentication
+├── auth/                    # iOS authentication
+├── src/                     # Web frontend source code
+├── public/                  # Web frontend static assets
+├── package.json             # Web frontend dependencies
+├── tailwind.config.js       # Tailwind CSS config
+├── vite.config.ts           # Vite config
+└── ...                      # Other config and infra files
 ```
 
+---
+
 ## 🎯 Supported Platforms
+- **Unity**: iOS, Android, Windows, macOS, Linux, UWP, Steam, Nintendo Switch, Xbox Store
+- **iOS**: iOS 16.0+ (iPhone, iPad)
+- **Web**: Modern browsers (React, Vite, Amplify)
 
-### Unity Game Engine
-- **Mobile**: iOS, Android
-- **Desktop**: Windows, macOS, Linux
-- **Console**: Nintendo Switch, Xbox Store
-- **Store**: Steam, UWP (Windows Store)
-
-### iOS Mobile App
-- **iOS**: 16.0+
-- **Devices**: iPhone, iPad
-- **Features**: SwiftUI, Combine, Core Data
-
-## 🔧 Build & Deployment
-
-### Unity Builds
-Use the custom build tools in `Editor/BuildTools/`:
-- Platform-specific configurations
-- Automated build pipelines
-- Validation and testing
-
-### iOS Deployment
-- App Store Connect integration
-- TestFlight distribution
-- Code signing automation
-
-### Android Deployment
-- Google Play Console integration
-- Internal testing tracks
-- Production releases
+---
 
 ## 📚 Documentation
-
 - **ARCHITECTURE.md**: Detailed system design
 - **CHANGELOG.md**: Version history and updates
 - **PLATFORMS.md**: Platform-specific build guides
 - **@docs/**: Additional documentation
 
-## 🤝 Contributing
+---
 
+## 🤝 Contributing
 1. Fork the repository
 2. Create a feature branch
 3. Follow the coding standards
 4. Add comprehensive documentation
 5. Submit a pull request
 
+---
+
 ## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-For support and questions:
-- Check the documentation in `@docs/`
-- Review platform-specific guides
-- Open an issue for bugs or feature requests
-
-## 🔮 Roadmap
-
-- [ ] Enhanced social features
-- [ ] Real-time multiplayer support
-- [ ] Advanced analytics
-- [ ] Cross-platform cloud saves
-- [ ] AI-powered game recommendations
-- [ ] Blockchain integration for digital assets
+This project is licensed under the MIT License (GameDin Mobile) and Apache-2.0 (Web Frontend) - see LICENSE files for details.
 
 ---
 
-**Built with ❤️ for the gaming community** 
+**Built with ❤️ for the gaming community**
